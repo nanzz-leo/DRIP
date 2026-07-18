@@ -2,12 +2,14 @@ import { Injectable } from "@nitrostack/core";
 import fs from "fs";
 import path from "path";
 
+
 import {
   Incident,
   RescueVehicle,
   Volunteer,
   Shelter,
   InventoryRequest,
+  RescueAllocationResult
 } from "./operations.types.js";
 
 @Injectable()
@@ -66,30 +68,31 @@ export class OperationsService {
   // Rescue Allocation
   // ===============================
 
-  allocateRescue(incidentId: string) {
-    const vehicles =
-      this.readJSON<RescueVehicle[]>("vehicles.json");
+  allocateRescue(incidentId: string): RescueAllocationResult {
 
-    const vehicle = vehicles.find((v) => v.available);
+  const vehicles =
+    this.readJSON<RescueVehicle[]>("vehicles.json");
 
-    if (!vehicle) {
-      return {
-        success: false,
-        message: "No rescue vehicles available.",
-      };
-    }
+  const vehicle = vehicles.find((v) => v.available);
 
-    vehicle.available = false;
-
-    this.writeJSON("vehicles.json", vehicles);
-
+  if (!vehicle) {
     return {
-      success: true,
-      incidentId,
-      vehicle,
-      eta: "15 minutes",
+      success: false,
+      message: "No rescue vehicles available.",
     };
   }
+
+  vehicle.available = false;
+
+  this.writeJSON("vehicles.json", vehicles);
+
+  return {
+    success: true,
+    incidentId,
+    vehicle,
+    eta: "15 minutes",
+  };
+}
 
   // ===============================
   // Volunteer Assignment

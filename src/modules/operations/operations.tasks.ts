@@ -21,11 +21,10 @@ export class OperationsTaskTools {
   ) {}
 
   @Tool({
-    name: "dispatch_emergency",
+    name: "plan_rescue",
 
     description:
-      "Dispatches a complete emergency response workflow. " +
-      "This is a long-running operation and should be executed as an MCP Task.",
+      "Generates a coordinated rescue plan for a disaster incident. This is a long-running planning task.",
 
     inputSchema: DispatchEmergencySchema,
 
@@ -45,45 +44,76 @@ export class OperationsTaskTools {
       },
 
       response: {
-        success: true,
-        status: "Emergency Response Initiated",
+        type: "RescuePlan",
+        priority: "Immediate",
+        estimatedResponseTime: "15 minutes",
+        actions: [
+          {
+            step: 1,
+            action: "Deploy Rescue Vehicle",
+          },
+          {
+            step: 2,
+            action: "Mobilize Volunteers",
+          },
+          {
+            step: 3,
+            action: "Deliver Relief Supplies",
+          },
+          {
+            step: 4,
+            action: "Prepare Shelter",
+          },
+          {
+            step: 5,
+            action: "Begin Evacuation",
+          },
+        ],
       },
     },
   })
-  async dispatchEmergency(
+  async planRescue(
     args: z.infer<typeof DispatchEmergencySchema>,
     ctx: ExecutionContext
   ) {
-
-    ctx.logger.info("Emergency dispatch started", args);
+    ctx.logger.info("Generating rescue plan", args);
 
     // -----------------------------
-    // Step 1
+    // Analyse Incident
     // -----------------------------
 
-    ctx.task?.updateProgress("🚨 Validating incident...");
+    ctx.task?.updateProgress("🚨 Analysing incident...");
     await sleep(1000);
     ctx.task?.throwIfCancelled();
 
     // -----------------------------
-    // Step 2
+    // Find Rescue Vehicle
     // -----------------------------
 
-    ctx.task?.updateProgress("🚑 Allocating rescue vehicle...");
-    await sleep(1200);
+    ctx.task?.updateProgress("🚑 Selecting rescue vehicle...");
+    await sleep(1000);
     ctx.task?.throwIfCancelled();
 
-    const rescue =
-      this.operationsService.allocateRescue(
-        args.incidentId
-      );
+    const rescue = this.operationsService.allocateRescue(args.incidentId);
+
+    if (!rescue.success) {
+  return {
+    type: "RescuePlan",
+    priority: "Critical",
+    reason: rescue.message,
+    actions: [],
+  };
+}
+
+console.log(rescue.vehicle.type);
+
 
     // -----------------------------
-    // Step 3
+    // Assign Volunteers
     // -----------------------------
 
-    ctx.task?.updateProgress("👨‍🚒 Assigning volunteers...");
-    await sleep(1200);
+    ctx.task?.updateProgress("👨‍🚒 Selecting volunteers...");
+    await sleep(1000);
     ctx.task?.throwIfCancelled();
 
     const volunteers =
@@ -92,11 +122,11 @@ export class OperationsTaskTools {
       );
 
     // -----------------------------
-    // Step 4
+    // Allocate Supplies
     // -----------------------------
 
-    ctx.task?.updateProgress("📦 Allocating relief supplies...");
-    await sleep(1200);
+    ctx.task?.updateProgress("📦 Reserving relief supplies...");
+    await sleep(1000);
     ctx.task?.throwIfCancelled();
 
     const inventory =
@@ -105,10 +135,10 @@ export class OperationsTaskTools {
       );
 
     // -----------------------------
-    // Step 5
+    // Reserve Shelter
     // -----------------------------
 
-    ctx.task?.updateProgress("🏠 Updating shelter capacity...");
+    ctx.task?.updateProgress("🏠 Checking shelter capacity...");
     await sleep(1000);
     ctx.task?.throwIfCancelled();
 
@@ -119,31 +149,92 @@ export class OperationsTaskTools {
       );
 
     // -----------------------------
-    // Step 6
+    // Determine Priority
     // -----------------------------
 
-    ctx.task?.updateProgress("✅ Emergency deployment completed.");
+    let priority = "Low";
 
-    ctx.logger.info("Emergency dispatch completed");
+    if (args.people >= 100) {
+      priority = "Critical";
+    } else if (args.people >= 50) {
+      priority = "High";
+    } else if (args.people >= 20) {
+      priority = "Medium";
+    }
+
+    ctx.task?.updateProgress("✅ Rescue plan generated.");
 
     return {
-
-      success: true,
+      type: "RescuePlan",
 
       incidentId: args.incidentId,
 
-      rescue,
+      priority,
 
-      volunteers,
+      estimatedResponseTime: rescue.success
+        ? rescue.eta
+        : "Unknown",
 
-      inventory,
+      actions: [
+        {
+          step: 1,
+          action: rescue.success
+            ? `Deploy ${rescue.vehicle.type}`
+            : "No rescue vehicle available",
+        },
+        {
+          step: 2,
+          action: `Mobilize ${
+            volunteers.success
+              ? volunteers.volunteers.length
+              : 0
+          } volunteers`,
+        },
+        {
+          step: 3,
+          action: `Deliver ${args.supplies.food} food packets`,
+        },
+        {
+          step: 4,
+          action: `Deliver ${args.supplies.water} litres of water`,
+        },
+        {
+          step: 5,
+          action: `Deliver ${args.supplies.medicine} medical kits`,
+        },
+        {
+          step: 6,
+          action: `Prepare Shelter ${args.shelterId}`,
+        },
+        {
+          step: 7,
+          action: `Evacuate ${args.people} civilians`,
+        },
+      ],
 
-      shelter,
+      resources: {
+        vehicle: rescue.success ? rescue.vehicle : null,
 
-      completedAt: new Date().toISOString(),
+        volunteers: volunteers.success
+          ? volunteers.volunteers
+          : [],
 
-      status: "Emergency Response Initiated",
+        shelter: shelter.success
+          ? shelter.shelter
+          : null,
 
+        supplies: args.supplies,
+      },
+
+      reasoning: [
+        "Nearest available rescue vehicle selected.",
+        "Available volunteers allocated.",
+        "Relief supplies reserved.",
+        "Shelter capacity verified.",
+        "Response plan generated based on current resource availability.",
+      ],
+
+      generatedAt: new Date().toISOString(),
     };
   }
 }

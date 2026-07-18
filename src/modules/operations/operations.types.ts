@@ -34,3 +34,19 @@ export interface InventoryRequest {
     water: number;
     medicine: number;
 }
+
+export interface RescueAllocationSuccess {
+  success: true;
+  incidentId: string;
+  vehicle: RescueVehicle;
+  eta: string;
+}
+
+export interface RescueAllocationFailure {
+  success: false;
+  message: string;
+}
+
+export type RescueAllocationResult =
+  | RescueAllocationSuccess
+  | RescueAllocationFailure;
