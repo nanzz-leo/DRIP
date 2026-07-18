@@ -1,14 +1,18 @@
 import { Injectable } from '@nitrostack/core';
-import { LLMService } from '../services/llm';
-import { PLANNER_SYSTEM_PROMPT } from '../prompts/systemPrompt';
-import { RESPONSE_PROMPT } from '../prompts/responsePrompt';
-// import { IntelligenceTasks } from '../modules/intelligence/intelligence.tasks'; //
+import { LLMService } from '../services/llm.js';
+import { PLANNER_SYSTEM_PROMPT } from '../prompts/systemPrompt.js';
+import { RESPONSE_PROMPT } from '../prompts/responsePrompt.js';
+
+// Import the real task controllers from sibling modules
+import { IntelligenceTasks } from '../modules/intelligence/intelligence.tasks.js';
+import { OperationsTaskTools } from '../modules/operations/operations.tasks.js';
 
 @Injectable()
 export class PlannerService {
   constructor(
     private readonly llmService: LLMService,
-    // private readonly intelligenceTasks: IntelligenceTasks //
+    private readonly intelligenceTasks: IntelligenceTasks,
+    private readonly operationsTasks: OperationsTaskTools
   ) {}
 
   /**
@@ -117,19 +121,37 @@ export class PlannerService {
    */
   private async executeTasks(tasks: string[], location: string): Promise<Record<string, any>> {
     const outputs: Record<string, any> = {};
+    const DYNAMIC_INCIDENT_ID = `INC-${Date.now()}`;
 
     for (const task of tasks) {
       console.log(`[PlannerService] Executing task: ${task}`);
       switch (task) {
+        
         case 'AssessDisaster':
-          // Using the real injected implementation, passing ONLY the location string
-          //outputs['AssessDisaster'] = await this.intelligenceTasks.assessDisaster(location);//
+          outputs['AssessDisaster'] = await this.intelligenceTasks.assessDisaster(location);
           break;
+        
         case 'LocateResources':
+          // Reverted back to the mock implementation
           outputs['LocateResources'] = await this.mockLocateResources();
           break;
+        
         case 'PlanRescue':
-          outputs['PlanRescue'] = await this.mockPlanRescue();
+          // Calling the real Operations tool with safe dynamic parameters
+          outputs['PlanRescue'] = await this.operationsTasks.planRescue(
+            {
+              incidentId: DYNAMIC_INCIDENT_ID,
+              volunteerCount: 5,
+              shelterId: "SHEL-001",
+              people: 50,
+              supplies: {
+                food: 100,
+                water: 200,
+                medicine: 30
+              }
+            }, 
+            null as any
+          );
           break;
       }
     }
@@ -157,7 +179,6 @@ ${JSON.stringify(taskOutputs, null, 2)}
 
   // ====================================================================
   // MOCKED TASK IMPLEMENTATIONS
-  // These will be replaced by actual teammate implementations later.
   // ====================================================================
 
   private async mockLocateResources(): Promise<any> {
@@ -169,15 +190,6 @@ ${JSON.stringify(taskOutputs, null, 2)}
       vehicles: { availableAmbulances: 3, availableRescueBoats: 2 },
       inventory: { waterBottles: 500, medicalKits: 50 },
       volunteers: 12
-    };
-  }
-
-  private async mockPlanRescue(): Promise<any> {
-    return {
-      status: "SUCCESS",
-      recommendedAction: "Deploy 2 rescue boats to flooded sector.",
-      volunteerAllocation: "Assign 4 volunteers to Community Center for intake.",
-      logistics: "Dispatch 1 ambulance to standby at North Ridge."
     };
   }
 }

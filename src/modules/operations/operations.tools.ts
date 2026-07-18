@@ -34,7 +34,7 @@ export class OperationsTools {
     examples: {
       request: {
         type: "Flood",
-        location: {"lat": 34.789, "lon": 78.5823 },
+        location: "34.789, 78.5823",
         severity: "High",
         description: "Residential area flooded",
         peopleAffected: 120,

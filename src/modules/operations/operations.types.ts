@@ -1,7 +1,7 @@
 export interface Incident {
     id: string;
     type: string;
-    location: string;
+    location:string;
     severity: "Low" | "Medium" | "High";
     description: string;
     peopleAffected: number;
