@@ -2,13 +2,13 @@ import { Injectable } from '@nitrostack/core';
 import { LLMService } from '../services/llm';
 import { PLANNER_SYSTEM_PROMPT } from '../prompts/systemPrompt';
 import { RESPONSE_PROMPT } from '../prompts/responsePrompt';
-import { IntelligenceTasks } from '../modules/intelligence/intelligence.tasks';
+// import { IntelligenceTasks } from '../modules/intelligence/intelligence.tasks'; //
 
 @Injectable()
 export class PlannerService {
   constructor(
     private readonly llmService: LLMService,
-    private readonly intelligenceTasks: IntelligenceTasks
+    // private readonly intelligenceTasks: IntelligenceTasks //
   ) {}
 
   /**
@@ -123,7 +123,7 @@ export class PlannerService {
       switch (task) {
         case 'AssessDisaster':
           // Using the real injected implementation, passing ONLY the location string
-          outputs['AssessDisaster'] = await this.intelligenceTasks.assessDisaster(location);
+          //outputs['AssessDisaster'] = await this.intelligenceTasks.assessDisaster(location);//
           break;
         case 'LocateResources':
           outputs['LocateResources'] = await this.mockLocateResources();
