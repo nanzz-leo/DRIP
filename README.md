@@ -1,54 +1,186 @@
-# NitroStack Pizzaz Template
+#  DRIP – Disaster Response Intelligence Platform
 
-Template focused on rich, interactive widget experiences (map/list/detail flows)
-using the NitroStack widget SDK patterns.
+> AI-powered emergency coordination platform built with NitroStack MCP to accelerate disaster response through intelligent planning, resource orchestration, and real-time operational insights.
 
-## What This Template Includes
+##  Overview
 
-- Widget-heavy module and UI structure
-- Interactive examples for advanced frontends
-- Optional map provider integration pattern
-- Studio-friendly development workflow
+DRIP (Disaster Response Intelligence Platform) is an AI-driven emergency response system designed to assist Disaster Management Authorities, Emergency Operations Centers (EOCs), first responders, and relief organizations.
 
-## Quick Start
+Instead of relying on fragmented information and manual coordination, DRIP orchestrates specialized intelligence modules to:
 
-```bash
-npx @nitrostack/cli init my-pizzaz-app --template typescript-pizzaz
-cd my-pizzaz-app
-npm run dev
+- Assess disaster severity
+- Analyze environmental conditions
+- Locate critical resources
+- Coordinate rescue operations
+- Generate actionable Situation Reports for decision makers
+
+Built using **NitroStack MCP**, DRIP exposes intelligent tools that can be orchestrated by AI agents to support emergency response workflows.
+
+---
+
+# Features
+
+## AI Planner
+
+- Intelligent incident analysis
+- Dynamic task selection
+- LLM-powered Situation Report generation
+- Minimal task execution strategy
+- Hallucination-resistant reporting
+
+---
+
+## Intelligence Module
+
+Provides:
+
+- Weather assessment
+- Hazard analysis
+- Safe route identification
+- Nearest hospital discovery
+- Shelter discovery
+- Severity estimation
+
+---
+
+## Operations Module
+
+Coordinates operational response:
+
+- Incident reporting
+- Rescue vehicle allocation
+- Volunteer assignment
+- Shelter updates
+- Relief inventory management
+- Emergency deployment workflow
+
+---
+
+## Situation Reports
+
+Automatically generates structured operational reports including:
+
+- Executive Summary
+- Severity Assessment
+- Affected Area
+- Threat Analysis
+- Resource Status
+- Tactical Action Plan
+- Intelligence Gaps
+- Operational Rationale
+
+---
+
+# Architecture
+
+```
+                    User Incident
+                          │
+                          ▼
+                 Planner Orchestrator
+                          │
+          ┌───────────────┼───────────────┐
+          ▼               ▼               ▼
+   Intelligence     Resources      Operations
+          │               │               │
+          └───────────────┼───────────────┘
+                          ▼
+               AI Situation Report
 ```
 
-## Optional Configuration
+---
 
-If this project uses a map provider, configure API tokens in widget `.env` files
-as documented in the template source.
+# Built With
 
-## Common Commands
+- NitroStack MCP
+- TypeScript
+- Node.js
+- NitroCloud
+- Gemini API
+- Zod
+- Mapbox (Widgets)
+
+---
+
+# Project Structure
+
+```
+src
+│
+├── planner/
+│   ├── planner.module.ts
+│   ├── planner.service.ts
+│   └── planner.tasks.ts
+│
+├── modules/
+│   ├── intelligence/
+│   ├── operations/
+│   ├── resources/
+│   └── pizzaz/
+│
+├── prompts/
+│   ├── systemPrompt.ts
+│   └── responsePrompt.ts
+│
+├── services/
+│   └── llm.ts
+│
+└── app.module.ts
+```
+
+---
+
+# Running Locally
 
 ```bash
-npm run dev
+git clone https://github.com/nanzz-leo/DRIP.git
+
+cd DRIP
+
+npm install
+
 npm run build
-npm start
-npm run widget <command>
+
+npm run dev
 ```
 
-## NitroStudio
+---
 
-NitroStudio is the fastest way to test and debug interactive widget output.
+# Example Workflow
 
-- Download: <https://nitrostack.ai/studio>
-- Studio: <https://nitrostack.ai/studio>
+```
+Incident Report
+        │
+        ▼
+Planner analyzes incident
+        │
+        ▼
+Assess Disaster
+        │
+        ▼
+Locate Resources
+        │
+        ▼
+Plan Rescue
+        │
+        ▼
+Generate AI Situation Report
+```
 
-## Links
+---
 
-- Docs: <https://docs.nitrostack.ai>
-- Widgets docs: <https://docs.nitrostack.ai/sdk/typescript/ui/widgets>
-- Main repository: <https://github.com/nitrocloudofficial/nitrostack>
+# Design Principles
 
-## Community
+- Human life first
+- Verified information only
+- Zero hallucination policy
+- Modular AI orchestration
+- MCP-native architecture
+- Extensible task-based design
 
-- Discord: <https://discord.gg/uVWey6UhuD>
-- X: <https://x.com/nitrostackai>
-- YouTube: <https://www.youtube.com/@nitrostackai>
-- LinkedIn: <https://linkedin.com/company/nitrostack-ai/>
-- GitHub: <https://github.com/nitrostackai>
+---
+
+# Team
+
+Built during the **NitroStack × Amrita University Hackathon**.
+
