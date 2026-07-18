@@ -1,6 +1,5 @@
 import { McpApp, Module, ConfigModule } from '@nitrostack/core';
-import { PizzazModule } from './modules/pizzaz/pizzaz.module.js';
-
+import { IntelligenceModule } from './modules/intelligence/intelligence.module.js'
 /**
  * Root Application Module
  *
@@ -22,7 +21,7 @@ import { PizzazModule } from './modules/pizzaz/pizzaz.module.js';
     description: 'Disaster Response Intelligence Platform',
     imports: [
         ConfigModule.forRoot(),
-        PizzazModule
+        IntelligenceModule
     ],
 })
 export class AppModule { }
