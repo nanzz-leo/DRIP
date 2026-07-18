@@ -1,0 +1,273 @@
+ [
+  {
+    "id": "SH001",
+    "name": "Government Higher Secondary School Kaniyambetta",
+    "zoneId": "zone-001",
+    "district": "Wayanad",
+    "address": "Kaniyambetta, Wayanad, Kerala 673124",
+    "location": { "lat": 11.699427, "lng": 76.083531 },
+    "capacity": 500,
+    "currentOccupancy": 318,
+    "status": "operational",
+    "shelterType": "government-school",
+    "priorityLevel": "high",
+    "facilities": {
+      "electricity": true,
+      "generator": true,
+      "kitchen": true,
+      "toilets": true,
+      "drinkingWater": true,
+      "medicalRoom": true,
+      "wheelchairAccessible": true,
+      "internet": true,
+      "petFriendly": false
+    },
+    "supplies": {
+      "foodKits": 340,
+      "riceKg": 1100,
+      "drinkingWaterLiters": 2500,
+      "blankets": 430,
+      "mattresses": 300,
+      "medicalKits": 45,
+      "babyFoodPackets": 35,
+      "sanitaryKits": 180,
+      "torchLights": 40
+    },
+    "contact": {
+      "organization": "District Emergency Operations Centre (DEOC), Wayanad",
+      "phone": "04936-286238",
+      "alternatePhone": "+91-9846145635",
+      "email": "hmghsskaniyambetta@gmail.com"
+    },
+    "lastUpdated": "2026-07-18T21:05:00+05:30"
+  },
+  {
+    "id": "SH002",
+    "name": "Government Vocational Higher Secondary School Mananthavady",
+    "zoneId": "zone-001",
+    "district": "Wayanad",
+    "address": "Mananthavady, Wayanad, Kerala 670645",
+    "location": { "lat": 11.789802, "lng": 76.002581 },
+    "capacity": 650,
+    "currentOccupancy": 451,
+    "status": "operational",
+    "shelterType": "government-school",
+    "priorityLevel": "high",
+    "facilities": {
+      "electricity": true,
+      "generator": true,
+      "kitchen": true,
+      "toilets": true,
+      "drinkingWater": true,
+      "medicalRoom": true,
+      "wheelchairAccessible": true,
+      "internet": true,
+      "petFriendly": false
+    },
+    "supplies": {
+      "foodKits": 470,
+      "riceKg": 1500,
+      "drinkingWaterLiters": 3400,
+      "blankets": 510,
+      "mattresses": 430,
+      "medicalKits": 70,
+      "babyFoodPackets": 42,
+      "sanitaryKits": 260,
+      "torchLights": 55
+    },
+    "contact": {
+      "organization": "GVHSS Mananthavady",
+      "phone": "04935-245500",
+      "alternatePhone": null,
+      "email": "gvhssmndy@gmail.com"
+    },
+    "lastUpdated": "2026-07-18T21:05:00+05:30"
+  },
+  {
+    "id": "SH003",
+    "name": "Government Higher Secondary School Kottathara",
+    "zoneId": "zone-001",
+    "district": "Wayanad",
+    "address": "Kottathara, Wayanad, Kerala 673124",
+    "location": { "lat": 11.671325, "lng": 76.02903 },
+    "capacity": 450,
+    "currentOccupancy": 236,
+    "status": "operational",
+    "shelterType": "government-school",
+    "priorityLevel": "medium",
+    "facilities": {
+      "electricity": true,
+      "generator": false,
+      "kitchen": true,
+      "toilets": true,
+      "drinkingWater": true,
+      "medicalRoom": false,
+      "wheelchairAccessible": true,
+      "internet": false,
+      "petFriendly": false
+    },
+    "supplies": {
+      "foodKits": 280,
+      "riceKg": 900,
+      "drinkingWaterLiters": 1800,
+      "blankets": 300,
+      "mattresses": 220,
+      "medicalKits": 30,
+      "babyFoodPackets": 18,
+      "sanitaryKits": 140,
+      "torchLights": 28
+    },
+    "contact": {
+      "organization": "GHSS Kottathara",
+      "phone": "04936-284390",
+      "alternatePhone": null,
+      "email": "ghsskottathara@gmail.com"
+    },
+    "lastUpdated": "2026-07-18T21:05:00+05:30"
+  },
+  {
+    "id": "SH004",
+    "name": "Government LP School Aluva",
+    "zoneId": "zone-002",
+    "district": "Ernakulam",
+    "address": "Aluva, Ernakulam, Kerala 683101",
+    "location": { "lat": 10.1085, "lng": 76.3510 },
+    "capacity": 400,
+    "currentOccupancy": 165,
+    "status": "operational",
+    "shelterType": "government-school",
+    "priorityLevel": "high",
+    "facilities": {
+      "electricity": true, "generator": true, "kitchen": true, "toilets": true,
+      "drinkingWater": true, "medicalRoom": true, "wheelchairAccessible": true,
+      "internet": true, "petFriendly": false
+    },
+    "supplies": {
+      "foodKits": 220, "riceKg": 800, "drinkingWaterLiters": 1600, "blankets": 260,
+      "mattresses": 190, "medicalKits": 25, "babyFoodPackets": 20, "sanitaryKits": 110, "torchLights": 24
+    },
+    "contact": {
+      "organization": "District Emergency Operations Centre (DEOC), Ernakulam",
+      "phone": "0484-2423513",
+      "alternatePhone": null,
+      "email": null
+    },
+    "lastUpdated": "2026-07-18T21:05:00+05:30"
+  },
+  {
+    "id": "SH005",
+    "name": "Government Higher Secondary School Painavu",
+    "zoneId": "zone-003",
+    "district": "Idukki",
+    "address": "Painavu, Idukki, Kerala 685603",
+    "location": { "lat": 9.8480, "lng": 76.9425 },
+    "capacity": 350,
+    "currentOccupancy": 40,
+    "status": "operational",
+    "shelterType": "government-school",
+    "priorityLevel": "medium",
+    "facilities": {
+      "electricity": true, "generator": false, "kitchen": true, "toilets": true,
+      "drinkingWater": true, "medicalRoom": false, "wheelchairAccessible": true,
+      "internet": false, "petFriendly": false
+    },
+    "supplies": {
+      "foodKits": 120, "riceKg": 500, "drinkingWaterLiters": 900, "blankets": 150,
+      "mattresses": 100, "medicalKits": 12, "babyFoodPackets": 10, "sanitaryKits": 60, "torchLights": 15
+    },
+    "contact": {
+      "organization": "District Emergency Operations Centre (DEOC), Idukki",
+      "phone": "04862-232224",
+      "alternatePhone": null,
+      "email": null
+    },
+    "lastUpdated": "2026-07-18T21:05:00+05:30"
+  },
+  {
+    "id": "SH006",
+    "name": "Government Higher Secondary School Champakulam",
+    "zoneId": "zone-004",
+    "district": "Alappuzha",
+    "address": "Champakulam, Kuttanad Taluk, Alappuzha, Kerala 688503",
+    "location": { "lat": 9.4460, "lng": 76.4270 },
+    "capacity": 500,
+    "currentOccupancy": 380,
+    "status": "operational",
+    "shelterType": "government-school",
+    "priorityLevel": "high",
+    "facilities": {
+      "electricity": true, "generator": true, "kitchen": true, "toilets": true,
+      "drinkingWater": true, "medicalRoom": true, "wheelchairAccessible": false,
+      "internet": false, "petFriendly": false
+    },
+    "supplies": {
+      "foodKits": 400, "riceKg": 1300, "drinkingWaterLiters": 2800, "blankets": 460,
+      "mattresses": 350, "medicalKits": 40, "babyFoodPackets": 38, "sanitaryKits": 190, "torchLights": 48
+    },
+    "contact": {
+      "organization": "District Emergency Operations Centre (DEOC), Alappuzha",
+      "phone": "0477-2251349",
+      "alternatePhone": null,
+      "email": null
+    },
+    "lastUpdated": "2026-07-18T21:05:00+05:30"
+  },
+  {
+    "id": "SH007",
+    "name": "Government Higher Secondary School Munnar",
+    "zoneId": "zone-005",
+    "district": "Idukki",
+    "address": "Munnar, Idukki, Kerala 685612",
+    "location": { "lat": 10.0895, "lng": 77.0600 },
+    "capacity": 250,
+    "currentOccupancy": 10,
+    "status": "operational",
+    "shelterType": "government-school",
+    "priorityLevel": "low",
+    "facilities": {
+      "electricity": true, "generator": false, "kitchen": true, "toilets": true,
+      "drinkingWater": true, "medicalRoom": false, "wheelchairAccessible": true,
+      "internet": false, "petFriendly": false
+    },
+    "supplies": {
+      "foodKits": 60, "riceKg": 250, "drinkingWaterLiters": 500, "blankets": 80,
+      "mattresses": 60, "medicalKits": 8, "babyFoodPackets": 5, "sanitaryKits": 30, "torchLights": 10
+    },
+    "contact": {
+      "organization": "District Emergency Operations Centre (DEOC), Idukki",
+      "phone": "04862-232224",
+      "alternatePhone": null,
+      "email": null
+    },
+    "lastUpdated": "2026-07-18T21:05:00+05:30"
+  },
+  {
+    "id": "SH008",
+    "name": "Government Higher Secondary School Kozhikode Beach",
+    "zoneId": "zone-006",
+    "district": "Kozhikode",
+    "address": "Beach Road, Kozhikode, Kerala 673032",
+    "location": { "lat": 11.2500, "lng": 75.7750 },
+    "capacity": 450,
+    "currentOccupancy": 0,
+    "status": "closed",
+    "shelterType": "government-school",
+    "priorityLevel": "low",
+    "facilities": {
+      "electricity": true, "generator": true, "kitchen": true, "toilets": true,
+      "drinkingWater": true, "medicalRoom": true, "wheelchairAccessible": true,
+      "internet": true, "petFriendly": false
+    },
+    "supplies": {
+      "foodKits": 0, "riceKg": 0, "drinkingWaterLiters": 0, "blankets": 0,
+      "mattresses": 0, "medicalKits": 0, "babyFoodPackets": 0, "sanitaryKits": 0, "torchLights": 0
+    },
+    "contact": {
+      "organization": "District Emergency Operations Centre (DEOC), Kozhikode",
+      "phone": "0495-2371166",
+      "alternatePhone": null,
+      "email": null
+    },
+    "lastUpdated": "2026-07-16T20:10:00+05:30"
+  }
+]

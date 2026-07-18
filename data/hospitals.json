@@ -1,0 +1,496 @@
+[
+  {
+    "id": "H001",
+    "name": "General Hospital Kalpetta",
+    "hospitalType": "government-general-hospital",
+    "zoneId": "zone-001",
+    "district": "Wayanad",
+    "address": "Kainatty, Kalpetta, Wayanad, Kerala 673122",
+    "location": { "lat": 11.6080, "lng": 76.0827 },
+    "status": "operational",
+    "priorityLevel": "high",
+    "specialties": [
+      "Emergency Medicine",
+      "General Medicine",
+      "General Surgery",
+      "Orthopedics",
+      "Pediatrics",
+      "Obstetrics & Gynecology",
+      "Anesthesiology"
+    ],
+    "facilities": {
+      "emergency": true,
+      "icu": true,
+      "bloodBank": true,
+      "oxygenSupply": true,
+      "ambulanceService": true,
+      "traumaCare": true,
+      "operationTheatre": true,
+      "dialysis": true,
+      "generatorBackup": true,
+      "pharmacy": true,
+      "laboratory": true,
+      "radiology": true
+    },
+    "capacity": {
+      "totalBeds": 250,
+      "icuBeds": 20,
+      "ventilators": 15
+    },
+    "occupancy": {
+      "occupiedBeds": 186,
+      "occupiedIcuBeds": 16,
+      "occupiedVentilators": 9
+    },
+    "resources": {
+      "ambulances": 6,
+      "doctorsOnDuty": 18,
+      "nursesOnDuty": 42,
+      "paramedics": 14,
+      "oxygenCylinders": 95,
+      "oxygenConcentrators": 18,
+      "bloodUnits": 72,
+      "firstAidKits": 130
+    },
+    "disasterCapabilities": {
+      "massCasualtySupport": true,
+      "burnUnit": false,
+      "snakeBiteTreatment": true,
+      "poisonManagement": true,
+      "helipad": false
+    },
+    "liveStatus": {
+      "acceptingPatients": true,
+      "acceptingAmbulances": true,
+      "triageLevel": "normal",
+      "powerStatus": "available",
+      "waterSupply": "available"
+    },
+    "contact": {
+      "organization": "General Hospital Kalpetta",
+      "phone": "04936-206768",
+      "alternatePhone": null,
+      "email": "gh.kalpeta@gmail.com"
+    },
+    "assignedResources": {
+      "ambulances": [],
+      "medicalTeams": [],
+      "inventoryLocations": [],
+      "incomingPatients": [],
+      "outgoingReferrals": []
+    },
+    "createdAt": "2026-07-18T15:30:00+05:30",
+    "lastUpdated": "2026-07-18T15:30:00+05:30",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": [
+      "Kerala Health Department",
+      "Wayanad District Administration",
+      "OpenStreetMap"
+    ],
+    "notes": "Operational values are simulated for disaster response."
+  },
+  {
+    "id": "H002",
+    "name": "District Hospital Mananthavady",
+    "hospitalType": "district-hospital",
+    "zoneId": "zone-001",
+    "district": "Wayanad",
+    "address": "Mananthavady, Wayanad, Kerala 670645",
+    "location": { "lat": 11.7930, "lng": 76.0090 },
+    "status": "operational",
+    "priorityLevel": "high",
+    "specialties": [
+      "Emergency Medicine",
+      "General Medicine",
+      "Orthopedics",
+      "General Surgery",
+      "Pediatrics",
+      "Trauma Care"
+    ],
+    "facilities": {
+      "emergency": true,
+      "icu": true,
+      "bloodBank": true,
+      "oxygenSupply": true,
+      "ambulanceService": true,
+      "traumaCare": true,
+      "operationTheatre": true,
+      "dialysis": false,
+      "generatorBackup": true,
+      "pharmacy": true,
+      "laboratory": true,
+      "radiology": true
+    },
+    "capacity": {
+      "totalBeds": 350,
+      "icuBeds": 30,
+      "ventilators": 20
+    },
+    "occupancy": {
+      "occupiedBeds": 248,
+      "occupiedIcuBeds": 23,
+      "occupiedVentilators": 11
+    },
+    "resources": {
+      "ambulances": 7,
+      "doctorsOnDuty": 22,
+      "nursesOnDuty": 58,
+      "paramedics": 20,
+      "oxygenCylinders": 120,
+      "oxygenConcentrators": 22,
+      "bloodUnits": 98,
+      "firstAidKits": 180
+    },
+    "disasterCapabilities": {
+      "massCasualtySupport": true,
+      "burnUnit": false,
+      "snakeBiteTreatment": true,
+      "poisonManagement": true,
+      "helipad": false
+    },
+    "liveStatus": {
+      "acceptingPatients": true,
+      "acceptingAmbulances": true,
+      "triageLevel": "busy",
+      "powerStatus": "available",
+      "waterSupply": "available"
+    },
+    "contact": {
+      "organization": "District Hospital Mananthavady",
+      "phone": "7909218211",
+      "alternatePhone": null,
+      "email": "pro.mananthavady@gmail.com"
+    },
+    "assignedResources": {
+      "ambulances": [],
+      "medicalTeams": [],
+      "inventoryLocations": [],
+      "incomingPatients": [],
+      "outgoingReferrals": []
+    },
+    "createdAt": "2026-07-18T15:30:00+05:30",
+    "lastUpdated": "2026-07-18T15:30:00+05:30",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": [
+      "Kerala Health Department",
+      "Wayanad District Administration",
+      "OpenStreetMap"
+    ],
+    "notes": "Operational values are simulated for disaster response."
+  },
+  {
+    "id": "H003",
+    "name": "Taluk Head Quarters Hospital Sulthan Bathery",
+    "hospitalType": "taluk-hospital",
+    "zoneId": "zone-001",
+    "district": "Wayanad",
+    "address": "Police Station Road, Sulthan Bathery, Wayanad, Kerala 673592",
+    "location": { "lat": 11.6570, "lng": 76.2630 },
+    "status": "operational",
+    "priorityLevel": "medium",
+    "specialties": [
+      "Emergency Medicine",
+      "General Medicine",
+      "Orthopedics",
+      "Pediatrics"
+    ],
+    "facilities": {
+      "emergency": true,
+      "icu": true,
+      "bloodBank": false,
+      "oxygenSupply": true,
+      "ambulanceService": true,
+      "traumaCare": true,
+      "operationTheatre": true,
+      "dialysis": false,
+      "generatorBackup": true,
+      "pharmacy": true,
+      "laboratory": true,
+      "radiology": true
+    },
+    "capacity": {
+      "totalBeds": 180,
+      "icuBeds": 12,
+      "ventilators": 8
+    },
+    "occupancy": {
+      "occupiedBeds": 127,
+      "occupiedIcuBeds": 9,
+      "occupiedVentilators": 5
+    },
+    "resources": {
+      "ambulances": 4,
+      "doctorsOnDuty": 14,
+      "nursesOnDuty": 30,
+      "paramedics": 10,
+      "oxygenCylinders": 60,
+      "oxygenConcentrators": 12,
+      "bloodUnits": 0,
+      "firstAidKits": 90
+    },
+    "disasterCapabilities": {
+      "massCasualtySupport": true,
+      "burnUnit": false,
+      "snakeBiteTreatment": true,
+      "poisonManagement": true,
+      "helipad": false
+    },
+    "liveStatus": {
+      "acceptingPatients": true,
+      "acceptingAmbulances": true,
+      "triageLevel": "normal",
+      "powerStatus": "available",
+      "waterSupply": "available"
+    },
+    "contact": {
+      "organization": "Taluk Head Quarters Hospital Sulthan Bathery",
+      "phone": "04936-221136",
+      "alternatePhone": null,
+      "email": "thqh.bathery@gmail.com"
+    },
+    "assignedResources": {
+      "ambulances": [],
+      "medicalTeams": [],
+      "inventoryLocations": [],
+      "incomingPatients": [],
+      "outgoingReferrals": []
+    },
+    "createdAt": "2026-07-18T15:30:00+05:30",
+    "lastUpdated": "2026-07-18T15:30:00+05:30",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": [
+      "Kerala Health Department",
+      "Wayanad District Administration",
+      "OpenStreetMap"
+    ],
+    "notes": "Operational values are simulated for disaster response."
+  },
+  {
+    "id": "H004",
+    "name": "Government Taluk Hospital Aluva",
+    "hospitalType": "taluk-hospital",
+    "zoneId": "zone-002",
+    "district": "Ernakulam",
+    "address": "Syrian Church Road, Periyar Nagar, Aluva, Ernakulam, Kerala 683101",
+    "location": { "lat": 10.1075, "lng": 76.3516 },
+    "status": "operational",
+    "priorityLevel": "high",
+    "specialties": ["Emergency Medicine", "General Medicine", "General Surgery", "Pediatrics"],
+    "facilities": {
+      "emergency": true, "icu": true, "bloodBank": false, "oxygenSupply": true,
+      "ambulanceService": true, "traumaCare": true, "operationTheatre": true,
+      "dialysis": false, "generatorBackup": true, "pharmacy": true,
+      "laboratory": true, "radiology": true
+    },
+    "capacity": { "totalBeds": 150, "icuBeds": 10, "ventilators": 6 },
+    "occupancy": { "occupiedBeds": 98, "occupiedIcuBeds": 6, "occupiedVentilators": 3 },
+    "resources": {
+      "ambulances": 3, "doctorsOnDuty": 10, "nursesOnDuty": 24, "paramedics": 8,
+      "oxygenCylinders": 40, "oxygenConcentrators": 10, "bloodUnits": 0, "firstAidKits": 60
+    },
+    "disasterCapabilities": {
+      "massCasualtySupport": true, "burnUnit": false, "snakeBiteTreatment": true,
+      "poisonManagement": true, "helipad": false
+    },
+    "liveStatus": {
+      "acceptingPatients": true, "acceptingAmbulances": true, "triageLevel": "busy",
+      "powerStatus": "available", "waterSupply": "available"
+    },
+    "contact": {
+      "organization": "Government Taluk Hospital, Aluva",
+      "phone": "0484-2629242",
+      "alternatePhone": null,
+      "email": "talukhospitalaluva@gmail.com"
+    },
+    "assignedResources": { "ambulances": [], "medicalTeams": [], "inventoryLocations": [], "incomingPatients": [], "outgoingReferrals": [] },
+    "createdAt": "2026-07-18T15:30:00+05:30",
+    "lastUpdated": "2026-07-18T15:30:00+05:30",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": ["Ernakulam District Administration", "Kerala Health Department"],
+    "notes": "Nearest government facility to the Aluva flood-alert stretch of the Periyar River. Operational values are simulated for disaster response."
+  },
+  {
+    "id": "H005",
+    "name": "District Hospital Painavu",
+    "hospitalType": "district-hospital",
+    "zoneId": "zone-003",
+    "district": "Idukki",
+    "address": "Painavu, Idukki, Kerala 685603",
+    "location": { "lat": 9.8478, "lng": 76.9422 },
+    "status": "operational",
+    "priorityLevel": "medium",
+    "specialties": ["Emergency Medicine", "General Medicine", "Orthopedics", "General Surgery"],
+    "facilities": {
+      "emergency": true, "icu": true, "bloodBank": true, "oxygenSupply": true,
+      "ambulanceService": true, "traumaCare": true, "operationTheatre": true,
+      "dialysis": false, "generatorBackup": true, "pharmacy": true,
+      "laboratory": true, "radiology": true
+    },
+    "capacity": { "totalBeds": 200, "icuBeds": 14, "ventilators": 8 },
+    "occupancy": { "occupiedBeds": 120, "occupiedIcuBeds": 7, "occupiedVentilators": 3 },
+    "resources": {
+      "ambulances": 4, "doctorsOnDuty": 12, "nursesOnDuty": 28, "paramedics": 9,
+      "oxygenCylinders": 50, "oxygenConcentrators": 11, "bloodUnits": 40, "firstAidKits": 70
+    },
+    "disasterCapabilities": {
+      "massCasualtySupport": true, "burnUnit": false, "snakeBiteTreatment": true,
+      "poisonManagement": true, "helipad": false
+    },
+    "liveStatus": {
+      "acceptingPatients": true, "acceptingAmbulances": true, "triageLevel": "normal",
+      "powerStatus": "available", "waterSupply": "available"
+    },
+    "contact": {
+      "organization": "District Hospital, Painavu, Idukki",
+      "phone": "04862-232232",
+      "alternatePhone": null,
+      "email": null
+    },
+    "assignedResources": { "ambulances": [], "medicalTeams": [], "inventoryLocations": [], "incomingPatients": [], "outgoingReferrals": [] },
+    "createdAt": "2026-07-18T15:30:00+05:30",
+    "lastUpdated": "2026-07-18T15:30:00+05:30",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": ["Idukki District Administration", "Kerala Health Department"],
+    "notes": "District headquarters hospital, located near the Idukki reservoir catchment. Operational values are simulated for disaster response."
+  },
+  {
+    "id": "H006",
+    "name": "General Hospital Alappuzha",
+    "hospitalType": "general-hospital",
+    "zoneId": "zone-004",
+    "district": "Alappuzha",
+    "address": "General Hospital Road, Alappuzha, Kerala 688011",
+    "location": { "lat": 9.4981, "lng": 76.3388 },
+    "status": "operational",
+    "priorityLevel": "high",
+    "specialties": ["Emergency Medicine", "General Medicine", "General Surgery", "Obstetrics & Gynecology", "Pediatrics"],
+    "facilities": {
+      "emergency": true, "icu": true, "bloodBank": true, "oxygenSupply": true,
+      "ambulanceService": true, "traumaCare": true, "operationTheatre": true,
+      "dialysis": true, "generatorBackup": true, "pharmacy": true,
+      "laboratory": true, "radiology": true
+    },
+    "capacity": { "totalBeds": 300, "icuBeds": 22, "ventilators": 14 },
+    "occupancy": { "occupiedBeds": 210, "occupiedIcuBeds": 15, "occupiedVentilators": 8 },
+    "resources": {
+      "ambulances": 5, "doctorsOnDuty": 16, "nursesOnDuty": 40, "paramedics": 13,
+      "oxygenCylinders": 80, "oxygenConcentrators": 16, "bloodUnits": 60, "firstAidKits": 100
+    },
+    "disasterCapabilities": {
+      "massCasualtySupport": true, "burnUnit": false, "snakeBiteTreatment": true,
+      "poisonManagement": true, "helipad": false
+    },
+    "liveStatus": {
+      "acceptingPatients": true, "acceptingAmbulances": true, "triageLevel": "busy",
+      "powerStatus": "available", "waterSupply": "available"
+    },
+    "contact": {
+      "organization": "General Hospital, Alappuzha",
+      "phone": "0477-2251400",
+      "alternatePhone": null,
+      "email": null
+    },
+    "assignedResources": { "ambulances": [], "medicalTeams": [], "inventoryLocations": [], "incomingPatients": [], "outgoingReferrals": [] },
+    "createdAt": "2026-07-18T15:30:00+05:30",
+    "lastUpdated": "2026-07-18T15:30:00+05:30",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": ["Alappuzha District Administration", "Kerala Health Department"],
+    "notes": "District government hospital serving the Kuttanad backwater lowlands. Operational values are simulated for disaster response."
+  },
+  {
+    "id": "H007",
+    "name": "Community Health Centre Munnar",
+    "hospitalType": "community-health-centre",
+    "zoneId": "zone-005",
+    "district": "Idukki",
+    "address": "Munnar, Idukki, Kerala 685612",
+    "location": { "lat": 10.0889, "lng": 77.0595 },
+    "status": "operational",
+    "priorityLevel": "medium",
+    "specialties": ["Emergency Medicine", "General Medicine"],
+    "facilities": {
+      "emergency": true, "icu": false, "bloodBank": false, "oxygenSupply": true,
+      "ambulanceService": true, "traumaCare": true, "operationTheatre": false,
+      "dialysis": false, "generatorBackup": true, "pharmacy": true,
+      "laboratory": true, "radiology": false
+    },
+    "capacity": { "totalBeds": 40, "icuBeds": 0, "ventilators": 0 },
+    "occupancy": { "occupiedBeds": 18, "occupiedIcuBeds": 0, "occupiedVentilators": 0 },
+    "resources": {
+      "ambulances": 1, "doctorsOnDuty": 3, "nursesOnDuty": 8, "paramedics": 3,
+      "oxygenCylinders": 12, "oxygenConcentrators": 4, "bloodUnits": 0, "firstAidKits": 25
+    },
+    "disasterCapabilities": {
+      "massCasualtySupport": false, "burnUnit": false, "snakeBiteTreatment": true,
+      "poisonManagement": false, "helipad": false
+    },
+    "liveStatus": {
+      "acceptingPatients": true, "acceptingAmbulances": true, "triageLevel": "normal",
+      "powerStatus": "available", "waterSupply": "available"
+    },
+    "contact": {
+      "organization": "Community Health Centre, Munnar",
+      "phone": "04865-230203",
+      "alternatePhone": null,
+      "email": null
+    },
+    "assignedResources": { "ambulances": [], "medicalTeams": [], "inventoryLocations": [], "incomingPatients": [], "outgoingReferrals": [] },
+    "createdAt": "2026-07-18T15:30:00+05:30",
+    "lastUpdated": "2026-07-18T15:30:00+05:30",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": ["Idukki District Administration", "Kerala Health Department"],
+    "notes": "Small first-response facility for the Munnar hill slope belt; serious trauma cases referred to District Hospital Painavu. Operational values are simulated for disaster response."
+  },
+  {
+    "id": "H008",
+    "name": "Government Medical College Hospital Kozhikode",
+    "hospitalType": "medical-college-hospital",
+    "zoneId": "zone-006",
+    "district": "Kozhikode",
+    "address": "Medical College P.O, Kozhikode, Kerala 673008",
+    "location": { "lat": 11.2380, "lng": 75.8850 },
+    "status": "operational",
+    "priorityLevel": "low",
+    "specialties": ["Emergency Medicine", "General Medicine", "General Surgery", "Orthopedics", "Obstetrics & Gynecology", "Pediatrics", "Cardiology", "Neurology"],
+    "facilities": {
+      "emergency": true, "icu": true, "bloodBank": true, "oxygenSupply": true,
+      "ambulanceService": true, "traumaCare": true, "operationTheatre": true,
+      "dialysis": true, "generatorBackup": true, "pharmacy": true,
+      "laboratory": true, "radiology": true
+    },
+    "capacity": { "totalBeds": 900, "icuBeds": 60, "ventilators": 40 },
+    "occupancy": { "occupiedBeds": 540, "occupiedIcuBeds": 35, "occupiedVentilators": 18 },
+    "resources": {
+      "ambulances": 10, "doctorsOnDuty": 45, "nursesOnDuty": 110, "paramedics": 30,
+      "oxygenCylinders": 200, "oxygenConcentrators": 40, "bloodUnits": 220, "firstAidKits": 260
+    },
+    "disasterCapabilities": {
+      "massCasualtySupport": true, "burnUnit": true, "snakeBiteTreatment": true,
+      "poisonManagement": true, "helipad": true
+    },
+    "liveStatus": {
+      "acceptingPatients": true, "acceptingAmbulances": true, "triageLevel": "normal",
+      "powerStatus": "available", "waterSupply": "available"
+    },
+    "contact": {
+      "organization": "Government Medical College Hospital, Kozhikode",
+      "phone": "0495-2350216",
+      "alternatePhone": null,
+      "email": null
+    },
+    "assignedResources": { "ambulances": [], "medicalTeams": [], "inventoryLocations": [], "incomingPatients": [], "outgoingReferrals": [] },
+    "createdAt": "2026-07-18T15:30:00+05:30",
+    "lastUpdated": "2026-07-18T15:30:00+05:30",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": ["Kozhikode District Administration", "Kerala Health Department"],
+    "notes": "Major tertiary referral centre for the region, with helipad and burn unit; zone currently stood down. Operational values are simulated for disaster response."
+  }
+]

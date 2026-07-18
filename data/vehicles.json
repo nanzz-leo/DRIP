@@ -1,0 +1,143 @@
+[
+  {
+    "id": "VH001",
+    "type": "ambulance",
+    "registrationNumber": "KL-12-AB-4521",
+    "zoneId": "zone-001",
+    "baseFacilityId": "H001",
+    "currentLocation": { "lat": 11.6080, "lng": 76.0827 },
+    "status": "available",
+    "capacity": { "passengers": 2, "cargoKg": 0 },
+    "fuelLevelPercent": 85,
+    "assignedDriver": {
+      "name": "Suresh Kumar",
+      "phone": "+91-9846201122"
+    },
+    "equipment": ["oxygenSupport", "stretcher", "firstAidKit", "defibrillator"],
+    "lastUpdated": "2026-07-18T21:00:00+05:30",
+    "notes": "Stationed at General Hospital Kalpetta, ready for emergency dispatch."
+  },
+  {
+    "id": "VH002",
+    "type": "ambulance",
+    "registrationNumber": "KL-12-AB-4788",
+    "zoneId": "zone-001",
+    "baseFacilityId": "H002",
+    "currentLocation": { "lat": 11.7930, "lng": 76.0090 },
+    "status": "deployed",
+    "capacity": { "passengers": 2, "cargoKg": 0 },
+    "fuelLevelPercent": 60,
+    "assignedDriver": {
+      "name": "Bijoy Thomas",
+      "phone": "+91-9846201245"
+    },
+    "equipment": ["oxygenSupport", "stretcher", "firstAidKit"],
+    "lastUpdated": "2026-07-18T21:00:00+05:30",
+    "notes": "En route to Mananthavady landslide-affected residential cluster."
+  },
+  {
+    "id": "VH003",
+    "type": "rescue-boat",
+    "registrationNumber": "KL-BOAT-0091",
+    "zoneId": "zone-004",
+    "baseFacilityId": "WH003",
+    "currentLocation": { "lat": 9.3800, "lng": 76.4200 },
+    "status": "deployed",
+    "capacity": { "passengers": 8, "cargoKg": 200 },
+    "fuelLevelPercent": 70,
+    "assignedDriver": {
+      "name": "Anil Varghese",
+      "phone": "+91-9847112233"
+    },
+    "equipment": ["lifeJackets", "rescueRope", "torchLight", "firstAidKit"],
+    "lastUpdated": "2026-07-18T21:00:00+05:30",
+    "notes": "Active boat evacuation in Kuttanad submerged paddy belt."
+  },
+  {
+    "id": "VH004",
+    "type": "rescue-boat",
+    "registrationNumber": "KL-BOAT-0104",
+    "zoneId": "zone-004",
+    "baseFacilityId": "WH003",
+    "currentLocation": { "lat": 9.3900, "lng": 76.4300 },
+    "status": "available",
+    "capacity": { "passengers": 6, "cargoKg": 150 },
+    "fuelLevelPercent": 95,
+    "assignedDriver": {
+      "name": "Rejith Pillai",
+      "phone": "+91-9847112567"
+    },
+    "equipment": ["lifeJackets", "rescueRope", "torchLight"],
+    "lastUpdated": "2026-07-18T21:00:00+05:30",
+    "notes": "On standby at Kuttanad staging point for next evacuation run."
+  },
+  {
+    "id": "VH005",
+    "type": "4x4-rescue-truck",
+    "registrationNumber": "KL-12-RT-3390",
+    "zoneId": "zone-001",
+    "baseFacilityId": "WH001",
+    "currentLocation": { "lat": 11.6854, "lng": 76.1320 },
+    "status": "deployed",
+    "capacity": { "passengers": 4, "cargoKg": 1200 },
+    "fuelLevelPercent": 55,
+    "assignedDriver": {
+      "name": "Manoj Nair",
+      "phone": "+91-9846309911"
+    },
+    "equipment": ["winchCable", "chainsaw", "shovels", "firstAidKit"],
+    "lastUpdated": "2026-07-18T21:00:00+05:30",
+    "notes": "Clearing debris access route near Chooralmala landslide corridor."
+  },
+  {
+    "id": "VH006",
+    "type": "water-tanker",
+    "registrationNumber": "KL-12-WT-2210",
+    "zoneId": "zone-001",
+    "baseFacilityId": "WH001",
+    "currentLocation": { "lat": 11.6085, "lng": 76.0830 },
+    "status": "available",
+    "capacity": { "passengers": 1, "cargoKg": 6000 },
+    "fuelLevelPercent": 90,
+    "assignedDriver": {
+      "name": "Sajeev K.S.",
+      "phone": "+91-9846412290"
+    },
+    "equipment": ["waterPump", "hosePipes"],
+    "lastUpdated": "2026-07-18T21:00:00+05:30",
+    "notes": "6000L capacity, ready to supply drinking water to shelters on request."
+  },
+  {
+    "id": "VH007",
+    "type": "relief-supply-truck",
+    "registrationNumber": "KL-07-RS-8842",
+    "zoneId": "zone-002",
+    "baseFacilityId": null,
+    "currentLocation": { "lat": 10.0450, "lng": 76.3050 },
+    "status": "deployed",
+    "capacity": { "passengers": 2, "cargoKg": 4000 },
+    "fuelLevelPercent": 65,
+    "assignedDriver": {
+      "name": "Prakash Menon",
+      "phone": "+91-9895701122"
+    },
+    "equipment": ["tarpaulins", "loadingRamp"],
+    "lastUpdated": "2026-07-18T21:00:00+05:30",
+    "notes": "Delivering food kits and blankets to Aluva flood relief camps."
+  },
+  {
+    "id": "VH008",
+    "type": "ambulance",
+    "registrationNumber": "KL-12-AB-5013",
+    "zoneId": "zone-001",
+    "baseFacilityId": "H003",
+    "currentLocation": { "lat": 11.6570, "lng": 76.2630 },
+    "status": "maintenance",
+    "capacity": { "passengers": 2, "cargoKg": 0 },
+    "fuelLevelPercent": 40,
+    "assignedDriver": null,
+    "equipment": ["oxygenSupport", "stretcher"],
+    "lastUpdated": "2026-07-18T18:20:00+05:30",
+    "notes": "Undergoing brake repair at Sulthan Bathery depot, expected back in service tomorrow."
+  }
+]

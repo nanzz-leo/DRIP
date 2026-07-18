@@ -1,0 +1,295 @@
+[
+  {
+    "id": "WH001",
+    "name": "District Emergency Warehouse Kalpetta",
+    "warehouseType": "district-disaster-warehouse",
+    "zoneId": "zone-001",
+    "district": "Wayanad",
+    "address": "Civil Station Campus, Kalpetta, Wayanad, Kerala 673122",
+    "location": { "lat": 11.6085, "lng": 76.0830 },
+    "status": "operational",
+    "priorityLevel": "high",
+    "storageCapacity": {
+      "totalCapacityTons": 500,
+      "usedCapacityTons": 285
+    },
+    "inventory": {
+      "foodKits": 5000,
+      "riceKg": 12000,
+      "drinkingWaterLiters": 25000,
+      "blankets": 3500,
+      "mattresses": 1800,
+      "tents": 250,
+      "tarpaulins": 450,
+      "medicalKits": 800,
+      "firstAidKits": 1200,
+      "babyFoodPackets": 450,
+      "sanitaryKits": 900,
+      "torchLights": 500,
+      "batteries": 2000,
+      "powerBanks": 120,
+      "oxygenCylinders": 150,
+      "lifeJackets": 600,
+      "rescueRopes": 300
+    },
+    "inventoryTransactions": [],
+    "contact": {
+      "organization": "District Disaster Management Authority, Wayanad",
+      "phone": "04936-204151",
+      "alternatePhone": null,
+      "email": "ddma.wayanad@kerala.gov.in"
+    },
+    "assignedResources": {
+      "vehicles": [],
+      "volunteers": [],
+      "activeRequests": []
+    },
+    "createdAt": "2026-07-18T15:30:00+05:30",
+    "lastUpdated": "2026-07-18T15:30:00+05:30",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": [
+      "District Disaster Management Authority",
+      "OpenStreetMap"
+    ],
+    "notes": "Inventory values are simulated."
+  },
+  {
+    "id": "WH002",
+    "name": "Emergency Relief Warehouse Mananthavady",
+    "warehouseType": "regional-relief-warehouse",
+    "zoneId": "zone-001",
+    "district": "Wayanad",
+    "address": "Mananthavady, Wayanad, Kerala 670645",
+    "location": { "lat": 11.7935, "lng": 76.0095 },
+    "status": "operational",
+    "priorityLevel": "high",
+    "storageCapacity": {
+      "totalCapacityTons": 350,
+      "usedCapacityTons": 205
+    },
+    "inventory": {
+      "foodKits": 3600,
+      "riceKg": 8500,
+      "drinkingWaterLiters": 18000,
+      "blankets": 2200,
+      "mattresses": 1100,
+      "tents": 180,
+      "tarpaulins": 320,
+      "medicalKits": 500,
+      "firstAidKits": 850,
+      "babyFoodPackets": 280,
+      "sanitaryKits": 620,
+      "torchLights": 320,
+      "batteries": 1400,
+      "powerBanks": 80,
+      "oxygenCylinders": 95,
+      "lifeJackets": 420,
+      "rescueRopes": 180
+    },
+    "inventoryTransactions": [],
+    "contact": {
+      "organization": "District Disaster Management Authority, Wayanad",
+      "phone": "04936-204151",
+      "alternatePhone": null,
+      "email": "ddma.wayanad@kerala.gov.in"
+    },
+    "assignedResources": {
+      "vehicles": [],
+      "volunteers": [],
+      "activeRequests": []
+    },
+    "createdAt": "2026-07-18T15:30:00+05:30",
+    "lastUpdated": "2026-07-18T15:30:00+05:30",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": [
+      "District Disaster Management Authority",
+      "OpenStreetMap"
+    ],
+    "notes": "Inventory values are simulated."
+  },
+  {
+    "id": "WH003",
+    "name": "Emergency Supply Warehouse Sulthan Bathery",
+    "warehouseType": "regional-relief-warehouse",
+    "zoneId": "zone-001",
+    "district": "Wayanad",
+    "address": "Sulthan Bathery, Wayanad, Kerala 673592",
+    "location": { "lat": 11.6575, "lng": 76.2635 },
+    "status": "operational",
+    "priorityLevel": "medium",
+    "storageCapacity": {
+      "totalCapacityTons": 250,
+      "usedCapacityTons": 142
+    },
+    "inventory": {
+      "foodKits": 2400,
+      "riceKg": 6200,
+      "drinkingWaterLiters": 12000,
+      "blankets": 1600,
+      "mattresses": 750,
+      "tents": 120,
+      "tarpaulins": 200,
+      "medicalKits": 350,
+      "firstAidKits": 500,
+      "babyFoodPackets": 180,
+      "sanitaryKits": 400,
+      "torchLights": 210,
+      "batteries": 950,
+      "powerBanks": 55,
+      "oxygenCylinders": 60,
+      "lifeJackets": 260,
+      "rescueRopes": 120
+    },
+    "inventoryTransactions": [],
+    "contact": {
+      "organization": "District Disaster Management Authority, Wayanad",
+      "phone": "04936-204151",
+      "alternatePhone": null,
+      "email": "ddma.wayanad@kerala.gov.in"
+    },
+    "assignedResources": {
+      "vehicles": [],
+      "volunteers": [],
+      "activeRequests": []
+    },
+    "createdAt": "2026-07-18T15:30:00+05:30",
+    "lastUpdated": "2026-07-18T15:30:00+05:30",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": [
+      "District Disaster Management Authority",
+      "OpenStreetMap"
+    ],
+    "notes": "Inventory values are simulated."
+  },
+  {
+    "id": "WH004",
+    "name": "District Emergency Warehouse Ernakulam",
+    "warehouseType": "district-disaster-warehouse",
+    "zoneId": "zone-002",
+    "district": "Ernakulam",
+    "address": "Civil Station Campus, Kakkanad, Ernakulam, Kerala 682030",
+    "location": { "lat": 10.0150, "lng": 76.3420 },
+    "status": "operational",
+    "priorityLevel": "high",
+    "storageCapacity": { "totalCapacityTons": 600, "usedCapacityTons": 310 },
+    "inventory": {
+      "foodKits": 4200, "riceKg": 10000, "drinkingWaterLiters": 21000, "blankets": 2800,
+      "mattresses": 1500, "tents": 200, "tarpaulins": 380, "medicalKits": 620,
+      "firstAidKits": 950, "babyFoodPackets": 340, "sanitaryKits": 700, "torchLights": 400,
+      "batteries": 1600, "powerBanks": 95, "oxygenCylinders": 110, "lifeJackets": 500, "rescueRopes": 220
+    },
+    "inventoryTransactions": [],
+    "contact": {
+      "organization": "District Disaster Management Authority, Ernakulam",
+      "phone": "0484-2423513",
+      "alternatePhone": null,
+      "email": "ddma.ernakulam@kerala.gov.in"
+    },
+    "assignedResources": { "vehicles": [], "volunteers": [], "activeRequests": [] },
+    "createdAt": "2026-07-18T15:30:00+05:30",
+    "lastUpdated": "2026-07-18T15:30:00+05:30",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": ["District Disaster Management Authority", "OpenStreetMap"],
+    "notes": "Inventory values are simulated."
+  },
+  {
+    "id": "WH005",
+    "name": "District Emergency Warehouse Idukki",
+    "warehouseType": "district-disaster-warehouse",
+    "zoneId": "zone-003",
+    "district": "Idukki",
+    "address": "Civil Station, Painavu, Idukki, Kerala 685603",
+    "location": { "lat": 9.8475, "lng": 76.9430 },
+    "status": "operational",
+    "priorityLevel": "medium",
+    "storageCapacity": { "totalCapacityTons": 300, "usedCapacityTons": 95 },
+    "inventory": {
+      "foodKits": 1800, "riceKg": 4500, "drinkingWaterLiters": 8000, "blankets": 1200,
+      "mattresses": 600, "tents": 90, "tarpaulins": 150, "medicalKits": 260,
+      "firstAidKits": 400, "babyFoodPackets": 120, "sanitaryKits": 300, "torchLights": 160,
+      "batteries": 700, "powerBanks": 40, "oxygenCylinders": 45, "lifeJackets": 150, "rescueRopes": 90
+    },
+    "inventoryTransactions": [],
+    "contact": {
+      "organization": "District Disaster Management Authority, Idukki",
+      "phone": "04862-232224",
+      "alternatePhone": null,
+      "email": "ddma.idukki@kerala.gov.in"
+    },
+    "assignedResources": { "vehicles": [], "volunteers": [], "activeRequests": [] },
+    "createdAt": "2026-07-18T15:30:00+05:30",
+    "lastUpdated": "2026-07-18T15:30:00+05:30",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": ["District Disaster Management Authority", "OpenStreetMap"],
+    "notes": "Inventory values are simulated."
+  },
+  {
+    "id": "WH006",
+    "name": "District Emergency Warehouse Alappuzha",
+    "warehouseType": "district-disaster-warehouse",
+    "zoneId": "zone-004",
+    "district": "Alappuzha",
+    "address": "Civil Station, Alappuzha, Kerala 688001",
+    "location": { "lat": 9.4920, "lng": 76.3320 },
+    "status": "operational",
+    "priorityLevel": "high",
+    "storageCapacity": { "totalCapacityTons": 400, "usedCapacityTons": 260 },
+    "inventory": {
+      "foodKits": 3200, "riceKg": 7800, "drinkingWaterLiters": 16000, "blankets": 2100,
+      "mattresses": 1000, "tents": 160, "tarpaulins": 340, "medicalKits": 450,
+      "firstAidKits": 700, "babyFoodPackets": 260, "sanitaryKits": 560, "torchLights": 300,
+      "batteries": 1300, "powerBanks": 70, "oxygenCylinders": 80, "lifeJackets": 900, "rescueRopes": 260
+    },
+    "inventoryTransactions": [],
+    "contact": {
+      "organization": "District Disaster Management Authority, Alappuzha",
+      "phone": "0477-2251349",
+      "alternatePhone": null,
+      "email": "ddma.alappuzha@kerala.gov.in"
+    },
+    "assignedResources": { "vehicles": [], "volunteers": [], "activeRequests": [] },
+    "createdAt": "2026-07-18T15:30:00+05:30",
+    "lastUpdated": "2026-07-18T15:30:00+05:30",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": ["District Disaster Management Authority", "OpenStreetMap"],
+    "notes": "Elevated life jacket and boat-rescue equipment stock reflects Kuttanad's boat-dependent terrain. Inventory values are simulated."
+  },
+  {
+    "id": "WH007",
+    "name": "District Emergency Warehouse Kozhikode",
+    "warehouseType": "district-disaster-warehouse",
+    "zoneId": "zone-006",
+    "district": "Kozhikode",
+    "address": "Civil Station, Kozhikode, Kerala 673020",
+    "location": { "lat": 11.2600, "lng": 75.7870 },
+    "status": "operational",
+    "priorityLevel": "low",
+    "storageCapacity": { "totalCapacityTons": 350, "usedCapacityTons": 60 },
+    "inventory": {
+      "foodKits": 1200, "riceKg": 3000, "drinkingWaterLiters": 6000, "blankets": 900,
+      "mattresses": 500, "tents": 70, "tarpaulins": 120, "medicalKits": 180,
+      "firstAidKits": 300, "babyFoodPackets": 90, "sanitaryKits": 220, "torchLights": 130,
+      "batteries": 550, "powerBanks": 30, "oxygenCylinders": 35, "lifeJackets": 200, "rescueRopes": 70
+    },
+    "inventoryTransactions": [],
+    "contact": {
+      "organization": "District Disaster Management Authority, Kozhikode",
+      "phone": "0495-2371166",
+      "alternatePhone": null,
+      "email": "ddma.kozhikode@kerala.gov.in"
+    },
+    "assignedResources": { "vehicles": [], "volunteers": [], "activeRequests": [] },
+    "createdAt": "2026-07-18T15:30:00+05:30",
+    "lastUpdated": "2026-07-16T20:10:00+05:30",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": ["District Disaster Management Authority", "OpenStreetMap"],
+    "notes": "Zone currently stood down; stock levels lower as previously mobilised supplies have been returned. Inventory values are simulated."
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "id": "zone-001",
+    "name": "Wayanad Landslide Corridor",
+    "district": "Wayanad",
+    "state": "Kerala",
+    "type": "landslide",
+    "severity": "critical",
+    "status": "active",
+    "center": { "lat": 11.6854, "lng": 76.1320 },
+    "boundary": [
+      { "lat": 11.7020, "lng": 76.1050 },
+      { "lat": 11.7100, "lng": 76.1500 },
+      { "lat": 11.6700, "lng": 76.1600 },
+      { "lat": 11.6600, "lng": 76.1150 }
+    ],
+    "estimatedPopulation": 18500,
+    "peopleAffected": 6200,
+    "accessStatus": "partial",
+    "notes": "Kalladi landslide struck near the Anakkampoyil-Kalladi-Meppadi tunnel project site on 7 July 2026, following heavy rainfall in Mananthavady and Vythiri. IMD issued a red alert for Wayanad district. Rescue and search operations ongoing across multiple downstream stretches.",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": [
+      "India Meteorological Department (IMD)",
+      "Kerala State Disaster Management Authority (KSDMA)",
+      "Wayanad District Administration"
+    ],
+    "lastUpdated": "2026-07-18T06:30:00+05:30"
+  },
+  {
+    "id": "zone-002",
+    "name": "Periyar River Flood Basin",
+    "district": "Ernakulam",
+    "state": "Kerala",
+    "type": "flood",
+    "severity": "high",
+    "status": "active",
+    "center": { "lat": 10.0450, "lng": 76.3050 },
+    "boundary": [
+      { "lat": 10.0700, "lng": 76.2800 },
+      { "lat": 10.0800, "lng": 76.3300 },
+      { "lat": 10.0200, "lng": 76.3400 },
+      { "lat": 10.0100, "lng": 76.2900 }
+    ],
+    "estimatedPopulation": 42000,
+    "peopleAffected": 15300,
+    "accessStatus": "open",
+    "notes": "Downstream water levels along the Periyar River are being monitored following upstream dam shutter releases from Idukki district reservoirs. Low-lying residential clusters near Aluva remain on alert amid continued monsoon rainfall.",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": [
+      "India Meteorological Department (IMD)",
+      "Kerala State Disaster Management Authority (KSDMA)",
+      "Ernakulam District Administration"
+    ],
+    "lastUpdated": "2026-07-18T07:15:00+05:30"
+  },
+  {
+    "id": "zone-003",
+    "name": "Idukki Reservoir Catchment",
+    "district": "Idukki",
+    "state": "Kerala",
+    "type": "flood",
+    "severity": "medium",
+    "status": "monitoring",
+    "center": { "lat": 9.8500, "lng": 76.9750 },
+    "boundary": [
+      { "lat": 9.8700, "lng": 76.9500 },
+      { "lat": 9.8800, "lng": 77.0000 },
+      { "lat": 9.8300, "lng": 77.0100 },
+      { "lat": 9.8200, "lng": 76.9600 }
+    ],
+    "estimatedPopulation": 9800,
+    "peopleAffected": 1200,
+    "accessStatus": "open",
+    "notes": "Shutters of the Pambla Dam (Lower Periyar Dam) in Idukki were opened on 4 July 2026 to discharge up to 500 cumecs of water after continuous catchment rainfall raised reservoir levels. Downstream villages along the Periyar River were advised caution as a precautionary measure. Note: this zone's center coordinates reflect the main Idukki Dam/reservoir area; the Pambla Dam itself sits at a distinct location (~9.9622, 76.9567, near Kanjikuzhi/Neriamangalam) roughly 13km away — see incidents.json (INC002) for the dam-specific coordinates.",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": [
+      "Kerala State Electricity Board (KSEB)",
+      "Idukki District Collector's Office",
+      "Kerala State Disaster Management Authority (KSDMA)"
+    ],
+    "lastUpdated": "2026-07-18T05:45:00+05:30"
+  },
+  {
+    "id": "zone-004",
+    "name": "Kuttanad Backwater Lowlands",
+    "district": "Alappuzha",
+    "state": "Kerala",
+    "type": "flood",
+    "severity": "high",
+    "status": "active",
+    "center": { "lat": 9.3800, "lng": 76.4200 },
+    "boundary": [
+      { "lat": 9.4000, "lng": 76.3900 },
+      { "lat": 9.4100, "lng": 76.4500 },
+      { "lat": 9.3500, "lng": 76.4600 },
+      { "lat": 9.3400, "lng": 76.4000 }
+    ],
+    "estimatedPopulation": 27500,
+    "peopleAffected": 11400,
+    "accessStatus": "boat-only",
+    "notes": "Below sea-level paddy region remains waterlogged amid sustained monsoon rainfall across Kerala. Road access constrained in several stretches; boat-based movement is the primary means of transit for residents and relief teams.",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": [
+      "Kerala State Disaster Management Authority (KSDMA)",
+      "Alappuzha District Administration"
+    ],
+    "lastUpdated": "2026-07-18T08:00:00+05:30"
+  },
+  {
+    "id": "zone-005",
+    "name": "Munnar Hill Slope Belt",
+    "district": "Idukki",
+    "state": "Kerala",
+    "type": "landslide",
+    "severity": "medium",
+    "status": "monitoring",
+    "center": { "lat": 10.0889, "lng": 77.0595 },
+    "boundary": [
+      { "lat": 10.1050, "lng": 77.0350 },
+      { "lat": 10.1100, "lng": 77.0800 },
+      { "lat": 10.0700, "lng": 77.0850 },
+      { "lat": 10.0650, "lng": 77.0400 }
+    ],
+    "estimatedPopulation": 6400,
+    "peopleAffected": 400,
+    "accessStatus": "open",
+    "notes": "Saturated soil on tea-estate slopes following prolonged monsoon rainfall across the Western Ghats. KSDMA advisories flag elevated landslide risk in hilly terrain; no incidents reported in this zone to date.",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": [
+      "Kerala State Disaster Management Authority (KSDMA)",
+      "Idukki District Administration"
+    ],
+    "lastUpdated": "2026-07-18T04:50:00+05:30"
+  },
+  {
+    "id": "zone-006",
+    "name": "Kozhikode Coastal Cyclone Strip",
+    "district": "Kozhikode",
+    "state": "Kerala",
+    "type": "cyclone",
+    "severity": "low",
+    "status": "resolved",
+    "center": { "lat": 11.2588, "lng": 75.7804 },
+    "boundary": [
+      { "lat": 11.2750, "lng": 75.7600 },
+      { "lat": 11.2800, "lng": 75.8000 },
+      { "lat": 11.2400, "lng": 75.8100 },
+      { "lat": 11.2350, "lng": 75.7650 }
+    ],
+    "estimatedPopulation": 31200,
+    "peopleAffected": 0,
+    "accessStatus": "open",
+    "notes": "Coastal warning previously in effect amid gusty winds and sea erosion advisories has been downgraded. Fishing activity resumed and the zone has been stood down pending any further IMD alert escalation.",
+    "verified": true,
+    "verificationDate": "2026-07-18",
+    "dataSource": [
+      "India Meteorological Department (IMD)",
+      "Kozhikode District Administration"
+    ],
+    "lastUpdated": "2026-07-16T20:10:00+05:30"
+  }
+]
